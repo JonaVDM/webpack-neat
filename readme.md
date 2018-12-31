@@ -2,8 +2,7 @@
 
 ## Quick install
 ```bash
-git clone git@github.com:JonaVDM/webpack-neat.git .
-rm -rf .git
+git clone git@github.com:JonaVDM/webpack-neat.git . && npm i && rm -rf .git
 ```
 
 ## Command stuff
