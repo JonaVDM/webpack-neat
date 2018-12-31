@@ -1,0 +1,90 @@
+// Breakpoints.
+$xs-screen:                     0px;
+$sm-screen:                     576px;
+$md-screen:                     768px;
+$lg-screen:                     1024px;
+$xl-screen:                     1200px;
+
+// Columns.
+$xs-columns:                    4;
+$sm-columns:                    12;
+$md-columns:                    12;
+$lg-columns:                    12;
+$xl-columns:                    12;
+
+// Gutters.
+$xs-gutter: 				    20px;
+$sm-gutter: 				    20px;
+$md-gutter: 				    30px;
+$lg-gutter: 				    50px;
+$xl-gutter: 				    60px;
+
+// Spacing.
+$xs-spacing:                    20px;
+$sm-spacing:                    20px;
+$md-spacing:                    30px;
+$lg-spacing:                    50px;
+$xl-spacing:                    60px;
+
+// Grids.
+$grid-max-width:                1440px;
+$xs: (
+    columns:                    $xs-columns,
+    gutter:                     $xs-gutter,
+);
+$xs-only: (
+    columns:                    $xs-columns,
+    gutter:                     $xs-gutter,
+    media:                      'only screen and (max-width: #{$sm-screen - 1})',
+);
+$sm: (
+    columns:                    $sm-columns,
+    gutter:                     $sm-gutter,
+    media:                      $sm-screen,
+);
+$sm-only: (
+    columns:                    $sm-columns,
+    gutter:                     $sm-gutter,
+    media:                      'only screen and (min-width: #{$sm-screen}) and (max-width: #{$md-screen - 1})',
+);
+$sm-max: (
+    columns:                    $sm-columns,
+    gutter:                     $sm-gutter,
+    media:                      'only screen and (max-width: #{$md-screen - 1})',
+);
+$md: (
+    columns:                    $md-columns,
+    gutter:                     $md-gutter,
+    media:                      $md-screen,
+);
+$md-only: (
+    columns:                    $md-columns,
+    gutter:                     $md-gutter,
+    media:                      'only screen and (min-width: #{$md-screen}) and (max-width: #{$lg-screen - 1})',
+);
+$md-max: (
+    columns:                    $md-columns,
+    gutter:                     $md-gutter,
+    media:                      'only screen and (max-width: #{$lg-screen - 1})',
+);
+$lg: (
+    columns:                    $lg-columns,
+    gutter:                     $lg-gutter,
+    media:                      $lg-screen,
+);
+$lg-only: (
+    columns:                    $lg-columns,
+    gutter:                     $lg-gutter,
+    media:                      'only screen and (min-width: #{$lg-screen}) and (max-width: #{$xl-screen - 1})',
+);
+$lg-max: (
+    columns:                    $lg-columns,
+    gutter:                     $lg-gutter,
+    media:                      'only screen and (max-width: #{$lg-screen - 1})',
+);
+$xl: (
+    columns:                    $xl-columns,
+    gutter:                     $xl-gutter,
+    media:                      $xl-screen,
+);
+$neat-grid:                     $xs;

@@ -1,0 +1,140 @@
+.column {
+    @include grid-column(4, $xs);
+
+    &--whole {
+        @include grid-media($sm-only) {
+            @include grid-column(12, $sm-only);
+        }
+
+        @include grid-media($md-only) {
+            @include grid-column(12, $md-only);
+        }
+
+        @include grid-media($lg-only) {
+            @include grid-column(12, $lg-only);
+        }
+
+        @include grid-media($xl) {
+            @include grid-column(12, $xl);
+        }
+    }
+
+    &--whole-shift {
+        @include grid-media($sm-only) {
+            @include grid-column(12, $sm-only);
+        }
+
+        @include grid-media($md-only) {
+            @include grid-column(10, $md-only);
+            @include grid-shift(1);
+        }
+
+        @include grid-media($lg-only) {
+            @include grid-column(8, $lg-only);
+            @include grid-shift(2);
+        }
+
+        @include grid-media($xl) {
+            @include grid-column(8, $xl);
+            @include grid-shift(2);
+        }
+    }
+
+    &--half {
+        @include grid-media($sm-only) {
+            @include grid-column(12, $sm-only);
+        }
+
+        @include grid-media($md-only) {
+            @include grid-column(6, $md-only);
+        }
+
+        @include grid-media($lg-only) {
+            @include grid-column(6, $lg-only);
+        }
+
+        @include grid-media($xl) {
+            @include grid-column(6, $xl);
+        }
+    }
+
+    &--one-third {
+        @include grid-media($sm-only) {
+            @include grid-column(12, $sm-only);
+        }
+
+        @include grid-media($md-only) {
+            @include grid-column(4, $md-only);
+        }
+
+        @include grid-media($lg-only) {
+            @include grid-column(4, $lg-only);
+        }
+
+        @include grid-media($xl) {
+            @include grid-column(4, $xl);
+        }
+    }
+
+    &--two-third {
+        @include grid-media($sm-only) {
+            @include grid-column(12, $sm-only);
+        }
+
+        @include grid-media($md-only) {
+            @include grid-column(8, $md-only);
+        }
+
+        @include grid-media($lg-only) {
+            @include grid-column(8, $lg-only);
+        }
+
+        @include grid-media($xl) {
+            @include grid-column(8, $xl);
+        }
+    }
+
+    &--one-quarter {
+        @include grid-media($sm-only) {
+            @include grid-column(12, $sm-only);
+        }
+
+        @include grid-media($md-only) {
+            @include grid-column(3, $md-only);
+        }
+
+        @include grid-media($lg-only) {
+            @include grid-column(3, $lg-only);
+        }
+
+        @include grid-media($xl) {
+            @include grid-column(3, $xl);
+        }
+    }
+
+    &--three-quarter {
+        @include grid-media($sm-only) {
+            @include grid-column(12, $sm-only);
+        }
+
+        @include grid-media($md-only) {
+            @include grid-column(9, $md-only);
+        }
+
+        @include grid-media($lg-only) {
+            @include grid-column(9, $lg-only);
+        }
+
+        @include grid-media($xl) {
+            @include grid-column(9, $xl);
+        }
+    }
+
+    &--margin-top {
+        @include spacing(margin-top);
+    }
+
+    &--margin-bottom {
+        @include spacing(margin-bottom);
+    }
+}

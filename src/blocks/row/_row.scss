@@ -1,0 +1,14 @@
+.row {
+    @include grid-container;
+
+    max-width: $grid-max-width;
+    margin: 0 auto;
+
+    &--padding-top {
+        @include spacing(padding-top);
+    }
+
+    &--padding-bottom {
+        @include spacing(padding-bottom);
+    }
+}

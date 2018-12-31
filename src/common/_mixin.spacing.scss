@@ -1,0 +1,21 @@
+@mixin spacing($property: margin) {
+    @include grid-media($xs-only) {
+        #{$property}: $xs-spacing;
+    }
+
+    @include grid-media($sm-only) {
+        #{$property}: $sm-spacing;
+    }
+
+    @include grid-media($md-only) {
+        #{$property}: $md-spacing;
+    }
+
+    @include grid-media($lg-only) {
+        #{$property}: $lg-spacing;
+    }
+
+    @include grid-media($xl) {
+        #{$property}: $xl-spacing;
+    }
+}

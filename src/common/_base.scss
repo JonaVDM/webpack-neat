@@ -1,0 +1,28 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-family-default;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
+    letter-spacing: 2px;
+    color: $color-text-default;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: $color-action;
+    color: $color-light;
+}
+
+::-moz-selection {
+    background: $color-action;
+    color: $color-light;
+}
